@@ -67,9 +67,9 @@ begin
             if(cnt == 20) state <= DISP_SHIFT;
         end
         DISP_SHIFT :begin
-            if(cnt >=5) cnt <= 0;
+            if(cnt >=5000) cnt <= 0;
             else cnt <= cnt+1;
-            if(cnt == 5) state <= DELAY_T;// LINE2 까지 표시되고, SHIFT가 일어나야 하므로 이 부분에 첨가한다.
+            if(cnt == 5000) state <= DELAY_T;// LINE2 까지 표시되고, SHIFT가 일어나야 하므로 이 부분에 첨가한다.
         end
         DELAY_T :begin
             if(cnt >= 5) cnt <= 0;
