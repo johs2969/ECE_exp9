@@ -99,7 +99,7 @@ begin
             DISP_ONOFF :
                 {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0000_1100;
             ENTRY_MODE :
-                {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0000_0111;   
+                {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0000_0111; //S=1로 설정하여 화면을 SHIFT할 것이라고 결정한다.  
             LINE1 : begin
                 case(cnt)
                     00 : {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_1000_0000; //        
