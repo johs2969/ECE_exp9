@@ -8,7 +8,7 @@ output LCD_E;
 output reg LCD_RS, LCD_RW;
 output reg [7:0] LCD_DATA, LED_OUT;
 
-reg [2:0] state;
+reg [3:0] state;
 parameter DELAY =4'b0000,
           FUNCTION_SET =4'b0001,
           ENTRY_MODE =4'b0010,
