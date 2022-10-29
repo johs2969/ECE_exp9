@@ -96,7 +96,7 @@ begin
                 {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0000_0110;   
             LINE1 : begin
                 case(cnt)
-                    00 : {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_1000_0011; //        
+                    00 : {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_1000_0011; //  처음 ADDRESS를 3으로 설정하여 3SHIFT효과를 나타낸다.    
                     01 : {LCD_RS, LCD_RW, LCD_DATA} =10'b1_0_0010_0000; // 
                     02 : {LCD_RS, LCD_RW, LCD_DATA} =10'b1_0_0100_1000; // H
                     03 : {LCD_RS, LCD_RW, LCD_DATA} =10'b1_0_0100_0101; // E
@@ -118,7 +118,7 @@ begin
               end
              LINE2 : begin
                 case(cnt)
-                    00 : {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_1100_0011; //        
+                    00 : {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_1100_0011; //  처음 ADDRESS를 43으로 설정하여 3SHIFT효과를 나타낸다.      
                     01 : {LCD_RS, LCD_RW, LCD_DATA} =10'b1_0_0011_0010; // 2
                     02 : {LCD_RS, LCD_RW, LCD_DATA} =10'b1_0_0011_0000; // 0
                     03 : {LCD_RS, LCD_RW, LCD_DATA} =10'b1_0_0011_0001; // 1
