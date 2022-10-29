@@ -89,7 +89,7 @@ begin
     else begin
         case(state)
             FUNCTION_SET :
-                {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0011_0000;
+                {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0011_0000;// N=0으로 설정하여 표시행수를 1로 설정한다.
             DISP_ONOFF :
                 {LCD_RS, LCD_RW, LCD_DATA} =10'b0_0_0000_1100;
             ENTRY_MODE :
